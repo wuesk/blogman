@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run blogman",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/blogman",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+      "MIMode": "gdb",
+      "stopAtEntry": false
+    }
+  ]
+}

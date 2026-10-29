@@ -7,6 +7,7 @@ struct GuestbookEntry
 {
     std::string name;
     std::string message;
+    std::string createdAt;
 };
 
 std::vector<GuestbookEntry> loadGuestbook();

@@ -1,0 +1,30 @@
+info:
+  name: add message
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/api/guestbook?name=Testowy&message=test
+  params:
+    - name: name
+      value: Testowy
+      type: query
+    - name: message
+      value: test
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Testowy",
+        "message": "Test"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

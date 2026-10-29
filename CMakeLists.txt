@@ -7,8 +7,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(blogman
     src/main.cpp
-    src/views.cpp
-    src/guestbook.cpp
+
+    src/views/views.cpp
+    src/views/views_routes.cpp
+
+    src/guestbook/guestbook.cpp
+    src/guestbook/guestbook_routes.cpp
+
+    src/posts/posts.cpp
 )
 
-target_include_directories(blogman PRIVATE include)
+target_include_directories(blogman PRIVATE include src)
